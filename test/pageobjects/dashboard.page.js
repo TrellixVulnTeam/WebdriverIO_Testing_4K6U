@@ -15,10 +15,7 @@ class DashboardPage extends Page {
     //}
     
     get btnLogout() {
-        const btnLogout = $('a[href="/logout-link"]');
-        //return $('a[href="/logout-link"]');
-        //return $('button[type="logout-link"]');
-        //return $('dropdown[selectByVisibleText="Logout"]');
+        const btnLogout = $('a[href="/logout-link"]');  
     }
 
     /**
