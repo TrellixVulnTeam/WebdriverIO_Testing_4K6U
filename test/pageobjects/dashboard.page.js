@@ -12,13 +12,8 @@ class DashboardPage extends Page {
 
     //}
     
-    get btnLogout() { return $('a[href="/logout-link"]')}
-    //{
-        //const btnLogout = $('a[href="/logout-link"]');  
-        
-    //}
-
-    /**
+    get btnLogout() { return $('a[href="/logout-link"]')} //Javascript 'return' function
+       /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
      */
