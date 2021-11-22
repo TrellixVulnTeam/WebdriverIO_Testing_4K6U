@@ -10,25 +10,20 @@ class DashboardPage extends Page {
      * define selectors using getter methods
      */
 
-    //get userDropdown() {
-        //return $('dropdown-menu.show');
     //}
     
-    get btnLogout() {
-        const btnLogout = $('a[href="/logout-link"]');  
-    }
+    get btnLogout() { return $('a[href="/logout-link"]')}
+    //{
+        //const btnLogout = $('a[href="/logout-link"]');  
+        
+    //}
 
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
      */
-    async logout() {
-        //await this.userDropdown.waitForClickable();
-        //await this.userDropdown.click();
-        //await this.btnLogout.waitForClickable();
-        await this.btnLogout.click()
-        //await this.userDropdown.setValue(span.caret);
-        //await this.btnLogout.click();
+    //async logout() {
+       // await this.btnLogout.click()
     }
 
     /**
@@ -37,6 +32,6 @@ class DashboardPage extends Page {
    // open() {
     //    return super.open('logout');
   //  }
-}
+//}
 
 module.exports = new DashboardPage();
