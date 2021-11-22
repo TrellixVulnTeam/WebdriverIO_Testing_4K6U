@@ -1,5 +1,5 @@
 const LoginPage = require('../pageobjects/login.page');
-const SecurePage = require('../pageobjects/secure.page');
+//const SecurePage = require('../pageobjects/secure.page');
 const DashboardPage = require('../pageobjects/dashboard.page');
 
 describe('My application', () => {
@@ -11,6 +11,6 @@ describe('My application', () => {
 
     it('should log the user out', () => {
         //  const btnLogout = $('a[href="/logout-link"]'); //find Element
-        DashboardPage.btnLogout.click();
+        DashboardPage.btnLogout.click(); //call the dashboard page 'btnLogout' funciton an clicking it
         });
 });

@@ -19,6 +19,7 @@ class DashboardPage extends Page {
      */
     //async logout() {
        // await this.btnLogout.click()
+    get navBar() { return $$('a[href="/navbar-brand"]')} //create a return for MULTIPLE elements of the 'navbar-brand' with double dollar signs
     }
 
     /**
