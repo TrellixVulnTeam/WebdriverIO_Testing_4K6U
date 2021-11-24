@@ -9,8 +9,8 @@ describe('My application', () => {
         await expect(browser).toHaveUrl('https://staging-squadbay.marines.com/dashboard');
   });
 
-    it('should log the user out', () => {
+   // it('should log the user out', () => {
         //  const btnLogout = $('a[href="/logout-link"]'); //find Element
-        DashboardPage.btnLogout.click(); //call the dashboard page 'btnLogout' funciton an clicking it
-        });
+     //   DashboardPage.btnLogout.click(); //call the dashboard page 'btnLogout' funciton an clicking it
+       // });
 });

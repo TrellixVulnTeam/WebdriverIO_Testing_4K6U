@@ -4,11 +4,23 @@ const DashboardPage = require('../pageobjects/dashboard.page');
 
 
 describe('Main Page', () => {
-    it('Verify Navigation Bar Items', () => {
+    it('Verify navbar items', () => {
         browser.url('/dashboard');
-
-        expect(DashboardPage.navBar).toHaveText("Dashboard","Users","Messages","RS/RSS/OSS","Reports","Referrals", ); 
+        
+        const navText = $$('#tabbar-links');
+        
+        expect(navText).toHaveTextContaining([
+            'Dashboard',
+            'Users',
+            'Messages',
+            'RS/RSS/OSS',
+            'Reports',
+            'Referrals',
+            'RikiTikiTavi',
+        ]);
+        //console.log(await navText.getText());
 
     });
+       
 });
 
