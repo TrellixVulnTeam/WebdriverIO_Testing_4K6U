@@ -22,7 +22,7 @@ exports.config = {
     //
     specs: [[
         "./test/specs/clear.cache.e2e.js",
-        "./test/specs/login.logout.e2e.js",
+        "./test/specs/login.e2e.js",
         "./test/specs/main.e2e.js",
         "./test/specs/logout.e2e.js",
             ]
